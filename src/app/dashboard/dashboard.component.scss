@@ -1,0 +1,47 @@
+.position-relative {
+	position: relative;
+}
+
+.add-contact {
+	position: absolute;
+    right: 17px;
+    top: 57px;
+}
+
+
+.neo {
+    font-size: 50px;
+    color: #ccc;
+}
+.neodiv {
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: -2px -2px 3px rgba(5, 5, 5, 0.05),
+                3px 3px 3px rgba(1, 1, 1, 0.02);
+   
+    box-sizing: border-box;
+}
+
+.neo:hover{
+    color: #00f3ff;
+    text-shadow: 0 0 15px #00f3ff;
+}
+
+button .btn1-nm{
+    background: #FFFFFF;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+.clicavel{
+    cursor: pointer;
+}
+
+.font-cards{
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1303px) {
+    .gt-sm {
+        flex: "40";
+    }
+  }
