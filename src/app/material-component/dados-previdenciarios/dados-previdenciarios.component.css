@@ -1,0 +1,7 @@
+.clicavel{
+    cursor: pointer;
+}
+
+.clicavel:hover{
+    color: #172c4b;
+}

@@ -1,8 +1,6 @@
 import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { RequisicaoService } from '../../api/requisicao.service';
-
-
+import { INoticiaCompleta } from '../../types/INoticiaCompleta';
 @Component({
   selector: 'app-noticia-completa',
   templateUrl: './noticia-completa.component.html',
@@ -11,11 +9,10 @@ import { RequisicaoService } from '../../api/requisicao.service';
 })
 export class NoticiaCompletaComponent implements OnInit {
 
-  click_noticia = [];
+  click_noticia : INoticiaCompleta;
 
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data, public dialogRef: MatDialogRef<NoticiaCompletaComponent>,
-    private api: RequisicaoService)
+  constructor(@Inject(MAT_DIALOG_DATA) public data, public dialogRef: MatDialogRef<NoticiaCompletaComponent>)
      {    }
 
   ngOnInit() {

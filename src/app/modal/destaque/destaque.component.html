@@ -1,5 +1,5 @@
 <!--
-<div class="mat-dialog-container" style="background: #1E88E5; padding: 0px 0px 0px 0px; display: block;">
+<div class="mat-dialog-container" style="background: #172c4b; padding: 0px 0px 0px 0px; display: block;">
     <div >
         <h2 style="color: white; padding: 15px 0px 5px 15px;">Destaque</h2>
     </div>
@@ -9,15 +9,12 @@
 </div>
 -->
 
-
-
-
 <div>
     <div>
-        <h2 style="padding: 15px; background-color: #1E88E5; margin: -25px -24px; color: white; display: flex;">Destaque
+        <h2 style="padding: 15px; background-color: #172c4b; margin: -25px -24px; color: white; display: flex;">Destaque
             <i class="material-icons" style="cursor: pointer; width: 100%; text-align: end;" [mat-dialog-close]="true">clear</i></h2>
     </div>
 
-    <img alt="Destaque" src="http://intranet.iprev.ma.gov.br/assets/images/destaque-novo.jpg" height="600px"
-        style="padding: 50px 0px; overflow: hidden;">
+    <img alt="Destaque" [src]="sanitize(url)" id="imagem" height="600px"
+        style="padding-top: 30px; overflow: hidden;"/>
 </div>

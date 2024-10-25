@@ -13,31 +13,22 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialRoutes } from './material.routing';
 import { ButtonsComponent } from './buttons/buttons.component';
 
-import { GridComponent } from './grid/grid.component';
-import { ListsComponent } from './lists/lists.component';
-import { MenuComponent } from './menu/menu.component';
-import { TabsComponent } from './tabs/tabs.component';
-import { StepperComponent } from './stepper/stepper.component';
-import { ExpansionComponent } from './expansion/expansion.component';
-import { ChipsComponent } from './chips/chips.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { ProgressSnipperComponent } from './progress-snipper/progress-snipper.component';
-import { ProgressComponent } from './progress/progress.component';
-import {
-  DialogComponent,
-  DialogOverviewExampleDialogComponent
-} from './dialog/dialog.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
-import { SliderComponent } from './slider/slider.component';
-import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { NoticiasComponent } from './noticias/noticias.component';
-import { ArquivosComponent } from './arquivos/arquivos.component';
-import { SuporteTiComponent } from './suporte-ti/suporte-ti.component';
-import { TransporteComponent } from './transporte/transporte.component';
+
+
 import { TelefonesComponent } from './telefones/telefones.component';
 import { OutrosServicosComponent } from './outros-servicos/outros-servicos.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SenhaMarketingComponent } from '../modal/senha-marketing/senha-marketing.component';
+import { IprevPlayComponent } from './iprev-play/iprev-play.component';
+import { FeriasComponent } from './ferias/ferias.component';
+import { NgxMaskModule } from 'ngx-mask';
+import { FrequenciaComponent } from './frequencia/frequencia.component';
 
+import { DadosPrevidenciariosComponent } from './dados-previdenciarios/dados-previdenciarios.component';
+import { GestaoComponent } from './gestao/gestao.component';
+import { ProvaDeVidaComponent } from './prova-de-vida/prova-de-vida.component';
 
 
 
@@ -50,34 +41,25 @@ import { OutrosServicosComponent } from './outros-servicos/outros-servicos.compo
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    CdkTableModule
+    CdkTableModule,
+    Ng2SearchPipeModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
-  entryComponents: [DialogOverviewExampleDialogComponent],
+  entryComponents: [],
   declarations: [
     ButtonsComponent,
-    GridComponent,
-    ListsComponent,
-    MenuComponent,
-    TabsComponent,
-    StepperComponent,
-    ExpansionComponent,
-    ChipsComponent,
-    ToolbarComponent,
-    ProgressSnipperComponent,
-    ProgressComponent,
-    DialogComponent,
-    DialogOverviewExampleDialogComponent,
-    TooltipComponent,
     SnackbarComponent,
-    SliderComponent,
-    SlideToggleComponent,
     NoticiasComponent,
-    ArquivosComponent,
-    SuporteTiComponent,
-    TransporteComponent,
     TelefonesComponent,
     OutrosServicosComponent,
+    IprevPlayComponent,
+    FeriasComponent,
+    FrequenciaComponent,
+    DadosPrevidenciariosComponent,
+    GestaoComponent,
+    ProvaDeVidaComponent,
+   
   ]
 })
 export class MaterialComponentsModule {}

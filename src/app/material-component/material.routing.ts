@@ -1,119 +1,63 @@
-import { NoticiaCompletaComponent } from './../modal/noticia-completa/noticia-completa.component';
-import { OutrosServicosComponent } from './outros-servicos/outros-servicos.component';
-import { TelefonesComponent } from './telefones/telefones.component';
-/*import { TransporteComponent } from './transporte/transporte.component';*/
-import { SuporteTiComponent } from './suporte-ti/suporte-ti.component';
-import { ArquivosComponent } from './arquivos/arquivos.component';
-import { NoticiasComponent } from './noticias/noticias.component';
+//import { OutrosServicosComponent } from './outros-servicos/outros-servicos.component';
+//import { TelefonesComponent } from './telefones/telefones.component';
+import { ProvaDeVidaComponent } from './prova-de-vida/prova-de-vida.component';
+import { GestaoComponent } from './gestao/gestao.component';
+import { DadosPrevidenciariosComponent } from './dados-previdenciarios/dados-previdenciarios.component';
+//import { NoticiasComponent } from './noticias/noticias.component';
 import { Routes } from '@angular/router';
 
-import { ButtonsComponent } from './buttons/buttons.component';
-import { GridComponent } from './grid/grid.component';
-import { ListsComponent } from './lists/lists.component';
-import { MenuComponent } from './menu/menu.component';
-import { TabsComponent } from './tabs/tabs.component';
-import { StepperComponent } from './stepper/stepper.component';
-import { ExpansionComponent } from './expansion/expansion.component';
-import { ChipsComponent } from './chips/chips.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { ProgressSnipperComponent } from './progress-snipper/progress-snipper.component';
-import { ProgressComponent } from './progress/progress.component';
-import { DialogComponent } from './dialog/dialog.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
+//import { ButtonsComponent } from './buttons/buttons.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
-import { SliderComponent } from './slider/slider.component';
-import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+//import { IprevPlayComponent } from './iprev-play/iprev-play.component';
+//import { FeriasComponent } from './ferias/ferias.component';
+//import { FrequenciaComponent } from './frequencia/frequencia.component';
 
 
 export const MaterialRoutes: Routes = [
-  {
+ /*  {
     path: 'button',
     component: ButtonsComponent
   },
   {
-    path: 'grid',
-    component: GridComponent
-  },
-  {
-    path: 'lists',
-    component: ListsComponent
-  },
-  {
-    path: 'menu',
-    component: MenuComponent
-  },
-  {
-    path: 'tabs',
-    component: TabsComponent
-  },
-  {
-    path: 'stepper',
-    component: StepperComponent
-  },
-  {
-    path: 'expansion',
-    component: ExpansionComponent
-  },
-  {
-    path: 'chips',
-    component: ChipsComponent
-  },
-  {
-    path: 'toolbar',
-    component: ToolbarComponent
-  },
-  {
-    path: 'progress-snipper',
-    component: ProgressSnipperComponent
-  },
-  {
-    path: 'progress',
-    component: ProgressComponent
-  },
-  {
-    path: 'dialog',
-    component: DialogComponent
-  },
-  {
-    path: 'tooltip',
-    component: TooltipComponent
-  },
-  {
-    path: 'snackbar',
+    path: 'marketing', //Marketing
     component: SnackbarComponent
-  },
-  {
-    path: 'slider',
-    component: SliderComponent
-  },
-  {
-    path: 'slide-toggle',
-    component: SlideToggleComponent
   },
   {
     path: 'noticias',
     component: NoticiasComponent
+  }, */
+  {
+    path: 'dados-previdenciarios',
+    component: DadosPrevidenciariosComponent
   },
   {
-    path: 'arquivos',
-    component: ArquivosComponent
+    path: 'gestao',
+    component: GestaoComponent
   },
-  {
-    path: 'suporte-ti',
-    component: SuporteTiComponent
-  },
-  /*
-  {
-    path: 'transporte',
-    component: TransporteComponent
-  },*/
-  {
-    path: 'telefones',
-    component: TelefonesComponent
-  }, 
-  {
-    path: 'outros-servicos',
-    component: OutrosServicosComponent
-  }
   
+  {
+    path: 'prova-de-vida',
+    component: ProvaDeVidaComponent,
+  }
+ /*  {
+    path: 'ramal',
+    component: TelefonesComponent
+  },
+  {
+    path: 'suporte-logistica',
+    component: OutrosServicosComponent
+  }, */
+  /* {
+    path: 'iprev-play',
+    component: IprevPlayComponent
+  }, */
+/*   {
+    path: 'ferias',
+    component: FeriasComponent
+  },
+  {
+    path: 'frequencia',
+    component: FrequenciaComponent,
+  } */
+
 ];

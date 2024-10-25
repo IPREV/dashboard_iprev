@@ -36,6 +36,10 @@ button .btn1-nm{
     cursor: pointer;
 }
 
+.clicavel:hover{
+    background-color: #e0edf7ce;
+}
+
 .font-cards{
     font-size: 16px;
 }
@@ -45,3 +49,4 @@ button .btn1-nm{
         flex: "40";
     }
   }
+  

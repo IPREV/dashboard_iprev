@@ -4,5 +4,18 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+   // API: 'https://api.iprev.ma.gov.br/api-intranet'
+   //API: 'http://10.31.47.76:3333',
+  //API: 'http://localhost:3333',
+  //API_RH: 'http://localhost:3336',
+  //API_FREQUENCIA: 'http://10.31.47.76:3334'
+  //API_FREQUENCIA: 'http://localhost:3334'
+
+  API: 'http://10.31.47.76:3333',
+  API_FREQUENCIA: 'http://10.31.47.76:3334',
+  //API: 'http://intranet.iprev.ma.gov.br/api',
+  //API: 'http://intranet.iprev.ma.gov.br/api-intranet',
+  API_RH: 'https://api.iprev.ma.gov.br/api-recadastramento-ativo',
+
 };

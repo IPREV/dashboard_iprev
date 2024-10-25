@@ -1,0 +1,29 @@
+<mat-card>
+	<mat-card-content>    
+		<mat-card-title>Lista de Férias do IPREV/MA</mat-card-title>
+		<mat-card-subtitle>Lista de Férias dos Servidores</mat-card-subtitle>
+		<div class="input-group mb-3 col-6 input-group-lg" style="padding: 20px 15px 0px 15px; float: right;">
+			<input type="text" class="form-control" placeholder="Digite uma busca" aria-label="Digite uma busca" aria-describedby="button-addon2"
+       		 style="border: 0.8px solid #CED4DA;" [(ngModel)]="filter">
+		</div>
+		 <table class="table" style=" margin-top:50px">
+			<thead style="background: white;">
+			  <tr>
+				<th scope="col">Servidor</th>
+				<th scope="col">Ano Referência</th>
+				<th scope="col">Data Início</th>
+                <th scope="col">Data Fim</th>
+			  </tr>
+			</thead>
+			<tbody style="background: white;"  style="font-size: 12px;">
+			  <tr *ngFor="let col of ferias | filter: filter">
+                <td style="font-size: 16px;" scope="row"> {{ col.servidor.nome}} </td>
+				<td style="font-size: 16px;" scope="row"> {{ col.ano_referencia }} </td>
+				<td style="font-size: 16px;" scope="row"> {{ col.data_inicio_formatada }} </td>
+				<td style="font-size: 16px;" scope="row"> {{ col.data_fim_formatada }} </td>
+			  </tr>
+			</tbody>
+		  </table>
+			
+	</mat-card-content>
+</mat-card>

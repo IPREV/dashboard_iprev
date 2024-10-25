@@ -1,0 +1,23 @@
+<mat-card>
+  <div class="input-group mb-3 col-6 input-group-lg" style="padding: 20px 15px 0px 15px; float: right;">
+    <input type="text" class="form-control" placeholder="Digite uma busca" aria-label="Digite uma busca"
+      aria-describedby="button-addon2" style="border: 0.8px solid #CED4DA;" [(ngModel)]="filter">
+  </div>
+  <mat-card-content>
+    <mat-card-title>IPREV Play</mat-card-title>
+
+    <mat-card-subtitle>Tutoriais, cursos e muitos mais...</mat-card-subtitle>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4v card-deck" style="margin-bottom: 30px;" *ngFor="let col of linksAll | filter: filter">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-text"> {{ col.titulo }} </h4>
+            <p scope="col" class="card-title" style="font-size: 14px;"> {{ col.descricao }} </p>
+
+            <div [innerHTML]="transform(col.link)"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

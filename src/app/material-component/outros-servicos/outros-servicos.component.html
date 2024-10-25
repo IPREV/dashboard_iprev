@@ -7,7 +7,8 @@
 				<p>
 					<mat-form-field appearance="outline">
 						<mat-label>Nome do solicitante</mat-label>
-						<input matInput placeholder="Nome completo">
+						<input matInput placeholder="Nome completo"
+						[(ngModel)]="chamadoAtual.nome_solicitante">
 					</mat-form-field>
 				</p>
 			</div>
@@ -15,7 +16,8 @@
 				<p>
 					<mat-form-field appearance="outline">
 						<mat-label>E-mail</mat-label>
-						<input matInput placeholder="E-mail institucional">
+						<input name="email"  matInput placeholder="E-mail institucional"
+						[(ngModel)]="chamadoAtual.email">
 					</mat-form-field>
 				</p>
 			</div>
@@ -25,7 +27,8 @@
 				<p>
 					<mat-form-field appearance="outline">
 						<mat-label>Setor</mat-label>
-						<input matInput placeholder="Setor">
+						<input matInput placeholder="Setor"
+						[(ngModel)]="chamadoAtual.setor">
 					</mat-form-field>
 				</p>
 			</div>
@@ -33,7 +36,8 @@
 				<p>
 					<mat-form-field appearance="outline">
 						<mat-label>Localização</mat-label>
-						<input matInput placeholder="(Biadene, Anxos, etc...)">
+						<input matInput placeholder="(Biadene, Anxos, etc...)"
+						[(ngModel)]="chamadoAtual.localizacao">
 					</mat-form-field>
 				</p>
 			</div>
@@ -43,13 +47,14 @@
 				<p>
 					<mat-form-field appearance="outline">
 						<mat-label>Descrição</mat-label>
-						<textarea matInput placeholder="Descrição da solicitação"></textarea>
+						<textarea matInput placeholder="Descrição da solicitação"
+						[(ngModel)]="chamadoAtual.descricao"></textarea>
 					</mat-form-field>
 				</p>
 			</div>
 		</div>
 		
-		<button mat-button>Solicitar serviço</button>
+		<button mat-button (click)="abrirChamado()">Solicitar serviço</button>
 	
 	</mat-card-content>
 </mat-card>

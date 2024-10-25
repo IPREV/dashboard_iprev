@@ -7,11 +7,11 @@
     <div class="card-body card-body-cascade text-center">
       <i class="material-icons" style="cursor: pointer; width: 100%; text-align: end;" [mat-dialog-close]="true">clear</i>
       <!-- Title -->
-      <h4 class="card-title"><strong>{{click_noticia.title.rendered}}</strong></h4>
+      <h4 class="card-title"><strong>{{click_noticia?.title?.rendered}}</strong></h4>
       <!-- Subtitle -->
-      <h6 class="font-weight-bold indigo-text py-2">Publicado em: {{click_noticia.date | date: 'dd/MM/yyyy'}}</h6>
+      <h6 class="font-weight-bold indigo-text py-2">Publicado em: {{click_noticia?.date | date: 'dd/MM/yyyy'}}</h6>
       <!-- Text -->
-      <p class="card-text" [innerHTML]="click_noticia.content.rendered">
+      <p class="card-text" [innerHTML]="click_noticia?.content?.rendered">
       </p>
     </div>
 

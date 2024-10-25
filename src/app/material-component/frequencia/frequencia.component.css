@@ -1,0 +1,45 @@
+button{
+    outline: 0;
+    background: #172c4b;
+    color: #fff;
+    padding: 7px 55px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
+input[type="month"] {
+    position: relative;
+}
+
+input[type="month"]:after {
+    content: "\1F4C6"; 
+    color: #555;
+    padding: 0px 20px 0px 0px;
+}
+
+
+input[type="month"]:hover:after {
+    color: #172c4b;
+}
+input[type="month"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 100%;
+    color: transparent;
+    background: transparent;
+}
+
+input[type="month"]::-webkit-inner-spin-button {
+    z-index: 1;
+}
+
+
+ input[type="month"]::-webkit-clear-button {
+     z-index: 1;
+ }
+ 

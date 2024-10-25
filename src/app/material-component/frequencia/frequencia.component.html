@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-content>
+        <mat-card-title>Gerar Folha de Frequência</mat-card-title>
+        <mat-card-subtitle>Informe seu CPF, mês e ano para os quais deseja gerar a frequência.</mat-card-subtitle>
+
+        <!--Adicionar uma tag form e colocar um atributo enctype="multipart/form-data" na tag form-->
+        <div class="form-row">
+            <div class="col-6">
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>CPF</mat-label>
+                        <input type="text" matInput [(ngModel)]="cpf" mask="000.000.000-00" placeholder="Informe seu CPF">
+                    </mat-form-field>
+                </p>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-6">
+                <p>
+                    <mat-form-field for="inMesAno" appearance="outline">
+                        <mat-label >Mês e ano</mat-label>
+                        <input type="month" id="inMesAno" matInput [(ngModel)]="mesAno" placeholder="Informe o mês e o ano" min="2022-01">
+                    </mat-form-field>        
+                </p>
+            </div>
+        </div>
+        <button mat-button (click)="gerarFrequencia()">Gerar Frequência</button>
+
+    </mat-card-content>
+</mat-card>

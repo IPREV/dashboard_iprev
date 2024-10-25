@@ -1,11 +1,24 @@
 <mat-card>
     <mat-card-content>
-        <mat-card-title>Basic snack-bar</mat-card-title>
-        <mat-card-subtitle>matSnackBar is a service for displaying snack-bar notifications. <code class=""><a href="https://material.angular.io/components/snack-bar/overview">Official Component</a></code></mat-card-subtitle>
-        <mat-form-field>
-            <input matInput value="Disco party!" placeholder="Message" #message> </mat-form-field>
-        <mat-form-field>
-            <input matInput value="Dance" placeholder="Action" #action> </mat-form-field>
-        <button mat-raised-button color="warn" (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
+        <mat-card-title>Área das Relações Públicas</mat-card-title>
+        <mat-card-subtitle>Envie a imagem para o destaque da Intranet.</mat-card-subtitle>
+
+        <!--Adicionar uma tag form e colocar um atributo enctype="multipart/form-data" na tag form-->
+        <div class="row">
+            <div class="custom-file col-md-6" >
+                <input type="file" class="custom-file-input" id="customFile" (change)="onChange($event)">
+                <label class="custom-file-label" for="customFile" id="customFileLabel">Selecionar imagem</label>
+            </div>
+
+            <div class="col-md-6" style="margin-top:5px; text-align:center;">
+                <label for="meeting-time" style="padding-right: 10px;">Data de Publicação: </label>
+                <input type="datetime-local" [(ngModel)]="data_agendamento" [ngModelOptions]="{standalone: true}" />
+            </div>
+
+            <div style="margin-top: 15px">
+                <button mat-raised-button color="primary" type="button" [disabled]="!arquivo" (click)= "onUpload()">Enviar</button>
+            </div>
+        </div>
+
     </mat-card-content>
 </mat-card>
